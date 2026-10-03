@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fbf9ef;
+    line-height: 1.6;
+    margin: 5px;
+    padding: 10px 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 22px;
+  color: #92b6f0;
+}
+
+header strong{
+    font-size: 22px;
+    color: #92b6f0;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap; /* mengatur agar content pindah baris */
+    align-items: center;
+    justify-content: flex-start; 
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px auto 100px auto;
+    padding: 0 30px;
+    gap: 30px;
+}
+
+.content{
+    flex: 1;
+}
+
+nav{
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto 24px auto;
+    width: fit-content;
+    gap: 16px;
+    background-color: #f4f6fb;
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #403f3f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+nav a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+}
+
+h2{
+    color: #92b6f0;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.data-info{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #403f3f;
+}
+
+.intro-index{
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+p strong{
+    color: #af7c74;
+}
+
+.image{
+    position: relative;
+    flex-shrink: 0;
+}
+
+.image .profile{
+    width: 300px;
+    height: 300px;
+    border-radius: 35px; 
+    object-fit: cover   ;
+    display: block;
+}
+
+.stars-icon{
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 60px;
+    height: auto;
+    z-index: 15;
+    pointer-events: none;
+}
+
+/* tentang */
+.badge-icon img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    display: block;   
+}
+
+/* cards */
+.cards{
+    display: grid; /* layout baris dan kolom*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.card{
+    background-color: #ffffff;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    margin: auto;
+}
+
+.card:hover{
+   transform: scale(1.02); /* mengubah ukuran skala elemen */
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+/* kontak */
+.text-contact{
+    background-color: #ffffff;
+    padding: 20px 24px;
+    border-radius: 15px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.contact-card{
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 500px;
+    
+    margin: auto;
+    padding: auto;
+}
+
+.contact-card h2{
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    color: #111111;
+}
+
+.contact-list{
+    justify-content: center;
+    list-style: none;
+}
+
+.contact-list li {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    background-color: #e2e8f0;
+    padding: 12px 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #333;
+    padding: 16px 30px;
+    background-color: #f9f5e6;
+    z-index: 1000;
+}
+
+/* &copy */
+.copyright p {
+    margin: 0;
+    color: #575656;
+    font-size: 14px;
+    text-align: left;              
+}
